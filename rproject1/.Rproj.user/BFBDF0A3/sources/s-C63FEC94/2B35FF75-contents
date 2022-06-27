@@ -1,0 +1,22 @@
+##내장된 함수
+jumsu = c(1, 7, 4, 2, 3, 9)
+
+print(sort(jumsu))##비파괴함수
+print(jumsu)
+
+jumsu.2 = sort(jumsu)
+print(jumsu.2)
+
+jumsu.3 = sort(jumsu, decreasing = TRUE)
+#jumsu.3 = sort(jumsu, TRUE) #decreasing생략 가능
+#true면 내림차순(큰 수부터)
+print(jumsu.3)
+
+str <- paste('굿', '모닝', sep = '/')#세퍼레이트
+print(str)
+str.2 <- paste('굿','모닝','굿','나잇', sep='')
+print(str.2)
+##하나가 전체에 영향을 미치는 것을 브로드캐스팅! 이라고 함
+##paste함수가 브로드캐스팅 가능하다.
+str.3 <- paste(1:12, '월',sep='')
+print(str.3)
